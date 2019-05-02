@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bootstrap Visualization Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--left nav link-->
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">LATITUDE
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+                <!--Right nav link-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Scatterplots
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="temp.html">Max Temperature</a>
+                            </li>
+                            <li>
+                                <a href="humidity.html">Humidity</a>
+                            </li>
+                            <li>
+                                <a href="cloudiness.html">Cloudiness</a>
+                            </li>
+                            <li>
+                                <a href="wind.html">Wind Speed</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="compare.html">Comparison</a>
+                    </li>
+                    <li>
+                        <a href="data.html">Data</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!--Main Grid-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="main-box">
+                    <h1 class="main-pg-header">Cloudiness</h1>
+                    <hr>
+                    <div class="summary txt">
+                        <img id="result-img" src="Assets/cloudiness_scatterplot.png", class = "img img-responsive", alt="Cloudiness_vs_Latitude_scatterplot">
+                        <p>
+                            From the scatterplot, it appears that little correlation exists between cloudiness and latitude.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="side-box">
+                    <h2 class="main-pg-subheader">Visualizations</h2>
+                    <hr>
+                    <div class="sidebar">
+                        <a href="temp.html">
+                            <img id="side-img1" src="Assets/temp_scatterplot.png", class = "img img-responsive", alt="Temp_vs_Latitude_scatterplot">
+                        </a>
+                        <a href="humidity.html">
+                            <img id="side-img2" src="Assets/humidity_scatterplot.png", class = "img img-responsive", alt="Humidity_vs_Latitude_scatterplot">
+                        </a>
+                        <a href="cloudiness.html">
+                            <img id="side-img3" src="Assets/cloudiness_scatterplot.png", class = "img img-responsive", alt="Cloudiness_vs_Latitude_scatterplot">
+                        </a>
+                        <a href="wind.html">
+                            <img id="side-img4" src="Assets/windspeed_scatterplot.png", class = "img img-responsive", alt="Wind_vs_Latitude_scatterplot">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
